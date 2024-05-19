@@ -1,7 +1,10 @@
 import React from "react";
-
-const BlogApp = () => {
-  return <div>Blog app</div>;
-};
-
-export default BlogApp;
+import PostCreate from "./PostCreate";
+export default function App() {
+  return (
+    <div className="container">
+      <h1>Create Post</h1>
+      <PostCreate />
+    </div>
+  );
+}
