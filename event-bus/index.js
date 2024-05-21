@@ -7,7 +7,6 @@ app.use(bodyParser.json());
 
 app.post("/events", (req, res) => {
   const event = req.body;
-
   axios.post("http://localhost:4000/events", event).catch((err) => {
     console.log(err.message);
   });
@@ -21,5 +20,5 @@ app.post("/events", (req, res) => {
 });
 
 app.listen(4005, () => {
-  console.log("Listening on port 4005");
+  console.log("Listening on 4005");
 });
