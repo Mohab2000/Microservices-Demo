@@ -7,10 +7,10 @@ export default function CommentList({ comments }) {
       content = comment.content;
     }
     if (comment.status === "pending") {
-      content = "This comment is awating moderation";
+      content = "This comment is awating moderation.";
     }
     if (comment.status === "rejected") {
-      content = "This comment has been rejected";
+      content = "This comment has been rejected.";
     }
     return <li key={comment.id}>{content}</li>;
   });
